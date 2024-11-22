@@ -1,0 +1,317 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #fff;
+    font-family: "Outfit", sans-serif;
+}
+
+/* 
+COLORES:
+- #b1007c = Violeta
+- #720050 = Violeta oscuro
+- #ffc5ee = Rosa Claro
+*/
+
+/*---------------------------------------------*/
+
+/* Frase Top */
+.frase-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffc5ee;
+}
+
+.navbar-container>img {
+    height: 8rem;
+}
+
+.list-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #fff;
+}
+
+.item-menu-navbar,
+.item-menu-navbar-carrito {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-menu-navbar>a,
+.item-menu-navbar-carrito>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all .5s;
+}
+
+.item-menu-navbar>a:hover {
+    color: #b1007c;
+    border-bottom: 1px solid #b1007c;
+}
+
+.item-menu-navbar>a>img {
+    height: 1.3rem;
+}
+/* Carrito */
+.numero-de-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b1007c;
+    border-radius: 50%;
+    padding: .3rem;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* FIN Navbar */
+
+/*---------------------------------------------*/
+
+/* Nuevo Ingreso Mujeres */
+.nuevo-i-m-container {
+    background-color: #ffc5ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0 5rem 0;
+}
+
+.nuevo-i-m-container>h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #b1007c;
+    text-shadow: 0px 0px 3px #b1007c;
+    padding: 1rem;
+}
+
+/* Tarjetas Diagonales */
+.tarjetas-diagonal-container,
+.tarjetas-diagonal-container-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    gap: 5rem;
+    padding-top: 5rem;
+}
+
+.tarjeta-container,
+.tarjeta-container-m {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+    transform: rotate(-20deg);
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #ffc5ee;
+    box-shadow: 0px 0px 5px 1px #000;
+    transition: all .7s;
+    opacity: .8;
+}
+
+.tarjeta-container:hover,
+.tarjeta-container-m:hover {
+    scale: 120%;
+    opacity: 1;
+}
+
+.tarjeta-container>img,
+.tarjeta-container-m>img {
+    height: 20rem;
+    width: 14rem;
+    border-radius: 16px;
+}
+
+/* Descuento */
+.descuento-producto-arriva-derecha {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background-color: red;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 1px #000;
+}
+
+/* FIN Nuevo Ingreso Mujeres */
+
+/*---------------------------------------------*/
+
+/* Locales Ubicaciones */
+.locales-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    padding: 1rem 0 ;
+    gap: 1rem;
+}
+
+.locales-container>h2 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.locales-container>h3 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    width: 50rem;
+}
+
+.local-individual-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    width: 50rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+
+}
+
+.text-locales-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text-locales-container>h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text-locales-container>span {
+    font-size: bold;
+    font-size: 20px;
+}
+
+/*---------------------------------------------*/
+
+/* Footer */
+.footer-container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 0 4rem;
+}
+
+.footer-container>img {
+    width: 30rem;
+}
+
+.lista-empresa-footer,
+.lista-legales-footer,
+.lista-regalos-footer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 13rem;
+    gap: 1rem;
+    flex-direction: column;
+    list-style: none;
+}
+
+.item-empresa-footer>a,
+.item-legales-footer>a,
+.item-regalos-footer>a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+    border-bottom: 1px solid transparent;
+}
+
+.item-empresa-footer>h3,
+.item-legales-footer>h3,
+.item-regalos-footer>h3 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.item-empresa-footer>a:hover,
+.item-legales-footer>a:hover,
+.item-regalos-footer>a:hover {
+    color: #b1007c;
+    border-bottom: 1px solid #b1007c;
+}
+
+/* FIN Footer */
+
+/*---------------------------------------------*/

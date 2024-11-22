@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RopaJ - Productos</title>
+    <link rel="stylesheet" href="css/productos-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <span class="frase-top">Descuentos en EFECTIVO hasta 50% - 6 Cuotas sín INTERES!</span>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar-container">
+        <img src="/assets/imgs/logo.png" alt="RopaJ">
+        <ul class="list-navbar">
+            <li class="item-menu-navbar"><a href="/index.html"><img src="/assets/svg/home.svg" alt="Inicio">Inicio</a>
+            </li>
+            <li class="item-menu-navbar"><a href="/productos.html"><img src="/assets/svg/productos.svg"
+                        alt="Productos">Catálogo</a></li>
+            <li class="item-menu-navbar"><a href="/descuentos.html"><img src="/assets/svg/descuentos.svg"
+                        alt="Descuentos">Descuentos</a></li>
+            <li class="item-menu-navbar"><a href="/regalos.html"><img src="/assets/svg/gift.svg" alt="Regalos">Para
+                    Regalar</a></li>
+            <li class="item-menu-navbar-carrito"><a href="/carrito.html"><img src="/assets/svg/carrito.svg"
+                        alt="Carrito"><span class="numero-de-carrito">0</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Productos -->
+    <main class="productos-filtros-container">
+
+        <!-- Filtros -->
+        <aside class="filtros-container">
+
+            <!-- Categorías -->
+            <div class="filtro-por-categoria-container">
+                <h3 class="categorias-filtro-h3">CATEGORÍAS <img src="/assets/svg/arrowdown.svg" alt=""></h3>
+                <button value="remeras" id="remeras" class="filtro-por-categoria-opciones">Remeras <span
+                        class="cruz">✖</span></button>
+                <button value="shorts" id="shorts" class="filtro-por-categoria-opciones">Shorts <span
+                        class="cruz">✖</span></button>
+                <button value="pantalones" id="pantalones" class="filtro-por-categoria-opciones">Pantalones <span
+                        class="cruz">✖</span></button>
+                <button value="bikinis" id="bikinis" class="filtro-por-categoria-opciones">Bikinis <span
+                        class="cruz">✖</span></button>
+            </div>
+
+
+        </aside>
+
+        <!-- Productos container -->
+        <div class="productos-mostrados-container">
+
+        </div>
+
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <!-- Logo -->
+        <img src="/assets/imgs/logo.png" alt="Logo">
+
+        <!-- Lista Empresa -->
+        <ul class="lista-empresa-footer">
+            <li class="item-empresa-footer">
+                <h3>Empresa</h3>
+            </li>
+            <li class="item-empresa-footer"><a href="/productos.html">Catálogo</a></li>
+            <li class="item-empresa-footer"><a href="/contactanos.html">Contacto</a></li>
+            <li class="item-empresa-footer"><a href="/descuentos.html">Descuentos</a></li>
+            <li class="item-empresa-footer"><a href="/comocomprar.html">Como Comprar?</a></li>
+        </ul>
+
+        <!-- Lista Regalos -->
+        <ul class="lista-regalos-footer">
+            <li class="item-regalos-footer">
+                <h3>Regalos</h3>
+            </li>
+            <li class="item-regalos-footer"><a href="/regalos.html" >Gift-Card</a></li>
+            <li class="item-regalos-footer"><a href="/regalos.html" >Envíos Sorpresa</a></li>
+        </ul>
+
+        <!-- Lista Empresa -->
+        <ul class="lista-legales-footer">
+            <li class="item-legales-footer">
+                <h3>Legales</h3>
+            </li>
+            <li class="item-legales-footer"><a href="/faq.html">Preguntas Frecuentes</a></li>
+            <li class="item-legales-footer"><a
+                    href="https://www.argentina.gob.ar/servicio/iniciar-un-reclamo-ante-defensa-del-consumidor"
+                    target="_blank">Defensa al Consumidor</a></li>
+        </ul>
+    </footer>
+
+    <script type="module" src="js/productos.js"></script>
+    <script type="module" src="js/data/productos-data.js"></script>
+</body>
+
+</html>
