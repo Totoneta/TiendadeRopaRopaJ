@@ -96,8 +96,9 @@ COLORES:
 .item-menu-navbar>a>img {
     height: 1.3rem;
 }
+
 /* Carrito */
-.numero-de-carrito{
+.numero-de-carrito {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +115,7 @@ COLORES:
 /*---------------------------------------------*/
 
 /* Regalos y Gift Cards */
-.regalos-container{
+.regalos-container {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -143,7 +144,7 @@ COLORES:
     scale: 110%;
 }
 
-.texto-tarjeta-regalo{
+.texto-tarjeta-regalo {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -209,5 +210,81 @@ COLORES:
 }
 
 /* FIN Footer */
+
+/*---------------------------------------------*/
+
+/* Mediaquerys */
+@media (min-width: 350px) and (max-width: 900px) {
+
+    /* Frase Top */
+    .frase-top {
+        height: 2.3rem;
+    }
+
+    /* Navbar */
+    .navbar-container>img {
+        height: 6rem;
+    }
+
+    .list-navbar {
+        height: 3rem;
+    }
+
+    .item-menu-navbar>a {
+        font-size: 0px;
+    }
+
+    .item-menu-navbar>a>img,
+    .item-menu-navbar-carrito>a>img {
+        height: 2rem;
+    }
+
+    /* FIN Navbar */
+
+    /*---------------------------------------------*/
+
+    /* Regalos y Gift Cards */
+    .regalos-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .tarjeta-regalo {
+        width: 100%;
+    }
+
+    /*---------------------------------------------*/
+
+    /* Footer */
+    .footer-container {
+        height: 17rem;
+        padding: 0;
+    }
+
+    .footer-container>img {
+        width: 0rem;
+    }
+
+    .lista-empresa-footer,
+    .lista-legales-footer,
+    .lista-regalos-footer {
+        height: 13rem;
+        padding: 0 1rem;
+    }
+
+    .item-empresa-footer>a,
+    .item-legales-footer>a,
+    .item-regalos-footer>a {
+        font-size: 15px;
+    }
+
+    .item-empresa-footer>h3,
+    .item-legales-footer>h3,
+    .item-regalos-footer>h3 {
+        font-size: 18px;
+    }
+
+    /* FIN Footer */
+}
 
 /*---------------------------------------------*/

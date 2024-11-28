@@ -96,8 +96,9 @@ COLORES:
 .item-menu-navbar>a>img {
     height: 1.3rem;
 }
+
 /* Carrito */
-.numero-de-carrito{
+.numero-de-carrito {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,5 +221,111 @@ COLORES:
 }
 
 /* FIN Footer */
+
+/*---------------------------------------------*/
+
+/* Mediaquerys */
+@media (min-width: 350px) and (max-width: 900px) {
+
+    /* Frase Top */
+    .frase-top {
+        height: 2.3rem;
+    }
+
+    /* Navbar */
+    .navbar-container>img {
+        height: 6rem;
+    }
+
+    .list-navbar {
+        height: 3rem;
+    }
+
+    .item-menu-navbar>a {
+        font-size: 0px;
+    }
+
+    .item-menu-navbar>a>img,
+    .item-menu-navbar-carrito>a>img {
+        height: 2rem;
+    }
+
+    /* FIN Navbar */
+
+    /*---------------------------------------------*/
+
+    /*Descuentos*/
+    .container-descuentos {
+        width: 95%;
+        gap: .5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .descuento-individual-container {
+        gap: .5rem;
+        width: 100%;
+        height: 20rem;
+        background-color: #fff;
+        border: 1px solid #000;
+
+    }
+
+    .descuento-individual-container>img {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .texto-descuentos-container {
+        height: 18rem;
+        padding: .5rem;
+        justify-content: center;
+    }
+
+    .texto-descuentos-container>h4 {
+        font-size: 18px;
+    }
+
+    .texto-descuentos-container>span {
+        font-size: 16px;
+    }
+
+    .texto-descuentos-container>p {
+        font-size: 16px;
+    }
+
+    /*---------------------------------------------*/
+
+    /* Footer */
+    .footer-container {
+        height: 17rem;
+        padding: 0;
+    }
+
+    .footer-container>img {
+        width: 0rem;
+    }
+
+    .lista-empresa-footer,
+    .lista-legales-footer,
+    .lista-regalos-footer {
+        height: 13rem;
+        padding: 0 1rem;
+    }
+
+    .item-empresa-footer>a,
+    .item-legales-footer>a,
+    .item-regalos-footer>a {
+        font-size: 15px;
+    }
+
+    .item-empresa-footer>h3,
+    .item-legales-footer>h3,
+    .item-regalos-footer>h3 {
+        font-size: 18px;
+    }
+
+    /* FIN Footer */
+}
 
 /*---------------------------------------------*/

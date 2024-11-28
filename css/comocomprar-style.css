@@ -96,8 +96,9 @@ COLORES:
 .item-menu-navbar>a>img {
     height: 1.3rem;
 }
+
 /* Carrito */
-.numero-de-carrito{
+.numero-de-carrito {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,5 +207,79 @@ COLORES:
 }
 
 /* FIN Footer */
+
+/*---------------------------------------------*/
+
+/* Mediaquerys */
+@media (min-width: 350px) and (max-width: 900px) {
+
+    /* Frase Top */
+    .frase-top {
+        height: 2.3rem;
+    }
+
+    /* Navbar */
+    .navbar-container>img {
+        height: 6rem;
+    }
+
+    .list-navbar {
+        height: 3rem;
+    }
+
+    .item-menu-navbar>a {
+        font-size: 0px;
+    }
+
+    .item-menu-navbar>a>img,
+    .item-menu-navbar-carrito>a>img {
+        height: 2rem;
+    }
+
+    /* FIN Navbar */
+
+    /*---------------------------------------------*/
+
+    /* Como Comprar Nuestros Productos */
+    .item-como-comprar {
+        width: 90%;
+        gap: .8rem;
+    }
+
+    /* FIN Como Comprar Nuestros Productos */
+
+    /*---------------------------------------------*/
+
+    /* Footer */
+    .footer-container {
+        height: 17rem;
+        padding: 0;
+    }
+
+    .footer-container>img {
+        width: 0rem;
+    }
+
+    .lista-empresa-footer,
+    .lista-legales-footer,
+    .lista-regalos-footer {
+        height: 13rem;
+        padding: 0 1rem;
+    }
+
+    .item-empresa-footer>a,
+    .item-legales-footer>a,
+    .item-regalos-footer>a {
+        font-size: 15px;
+    }
+
+    .item-empresa-footer>h3,
+    .item-legales-footer>h3,
+    .item-regalos-footer>h3 {
+        font-size: 18px;
+    }
+
+    /* FIN Footer */
+}
 
 /*---------------------------------------------*/
