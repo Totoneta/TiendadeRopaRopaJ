@@ -210,8 +210,8 @@ COLORES:
 
 /*---------------------------------------------*/
 
-/* Mediaquerys */
-@media (min-width: 350px) and (max-width: 900px) {
+/* Mediaquerys 350px */
+@media (min-width: 350px) {
 
     /* Frase Top */
     .frase-top {
@@ -283,3 +283,65 @@ COLORES:
 }
 
 /*---------------------------------------------*/
+
+/* Mediaquerys 720px */
+@media (min-width: 720px) {
+
+
+    /* Frase Top */
+    .frase-top {
+        height: 2rem;
+    }
+
+    /* Navbar */
+    .item-menu-navbar>a {
+        font-size: 15px;
+    }
+
+    /* FIN Navbar */
+
+}
+
+/*---------------------------------------------*/
+
+/* Mediaquerys 1350px */
+@media (min-width: 1350px) {
+
+    /* Navbar */
+    .navbar-container>img {
+        height: 8rem;
+    }
+
+    .item-menu-navbar>a>img,
+    .item-menu-navbar-carrito>a>img {
+        height: 2rem;
+    }
+
+    /* FIN Navbar */
+
+    /*---------------------------------------------*/
+
+    .item-como-comprar {
+        width: 70%;
+        gap: .8rem;
+    }
+
+    /*---------------------------------------------*/
+
+    /* Footer */
+    .footer-container {
+        padding: 0 4rem;
+    }
+
+    .footer-container>img {
+        width: 30rem;
+    }
+
+    .item-empresa-footer>h3,
+    .item-legales-footer>h3,
+    .item-regalos-footer>h3 {
+        font-size: 22px;
+    }
+
+    /* FIN Footer */
+}
